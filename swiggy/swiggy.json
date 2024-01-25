@@ -1,0 +1,122 @@
+[
+    {
+        "product_name": "Veg Biryani",
+        "price": "210",
+        "searve": "Serves 1 person",
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/apzrl8u4qbtckjecihmq"
+    },
+    {
+        "product_name": "Mini Chicken Biryani",
+        "price": "159",
+        "searve": "Serves 1 Person ( half pc of chicken)",
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/hqilwii7tokkileglhq4"
+    },
+    {
+        "product_name": "Chicken Biryani Jumbo Pack",
+        "price": "899",
+        "searve": "Serves 4-5 Persons( 4pcs chicken)",
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/zvkqo6seqdb0mwzz8zy9"
+    },
+    {
+        "product_name": "Mutton Biryani",
+        "price": "315",
+        "searve": "Serves 1-2 Persons( 6 pcs mutton with bones)",
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/r68yifjk7tmgjkmlpdww"
+    },
+    {
+        "product_name": "Mutton Biryani Jumbo Pack",
+        "price": "955",
+        "searve": "Serves 4-5 Persons( 18 pcs mutton with bones)",
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/nsv5p23sger04kqmhd2q"
+    },
+    {
+        "product_name": "Chicken Tangdi Kebab",
+        "price": "191",
+        "searve": null,
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/suv5xj64ykncxkkjdwx1"
+    },
+    {
+        "product_name": "Chicken Tikka Kebab",
+        "price": "286",
+        "searve": null,
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/tqkevw2umrr0jzzdcula"
+    },
+    {
+        "product_name": "Chicken Malai Kebab",
+        "price": "286",
+        "searve": null,
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ghum4s8yotdpk1wekfjt"
+    },
+    {
+        "product_name": "Chicken 65",
+        "price": "248",
+        "searve": null,
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/d689mly90dlepetgurzi"
+    },
+    {
+        "product_name": "Chicken Talawa",
+        "price": "248",
+        "searve": null,
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/vnoklla8nwlsyadvkkmj"
+    },
+    {
+        "product_name": "Tandoori Chicken",
+        "price": "210",
+        "searve": null,
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/sjc2nmqsarexotmi4dpb"
+    },
+    {
+        "product_name": "Mutton Tikka Kebab",
+        "price": "343",
+        "searve": null,
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/umzpy6oaamxobginajyc"
+    },
+    {
+        "product_name": "Mutton Talawa",
+        "price": "343",
+        "searve": null,
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ua0yhudw1r9pmu7slvvs"
+    },
+    {
+        "product_name": "Mutton Chops Fry",
+        "price": "295",
+        "searve": null,
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/hc99akxyqpupzobqekra"
+    },
+    {
+        "product_name": "Fish Talawa",
+        "price": "343",
+        "searve": null,
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/thydefftnok0gswsiqi6"
+    },
+    {
+        "product_name": "Apollo Fish",
+        "price": "343",
+        "searve": null,
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/phlwhrhylo74xzwxgkey"
+    },
+    {
+        "product_name": "Prawns Loose Fried",
+        "price": "343",
+        "searve": null,
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/n7alklf4tofmwjsxkgjh"
+    },
+    {
+        "product_name": "Paneer 65",
+        "price": "286",
+        "searve": null,
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/z42hiqrzk6hssohsr9ze"
+    },
+    {
+        "product_name": "Butter Chicken",
+        "price": "248",
+        "searve": null,
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/wrjeurqpmzpttbylyji7"
+    },
+    {
+        "product_name": "Chicken Curry",
+        "price": "248",
+        "searve": null,
+        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ftlffyg9njc0tnc5tpiw"
+    }
+]

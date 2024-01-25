@@ -1,4 +1,4 @@
-# Scrapy settings for ambissionbox project
+# Scrapy settings for bantia project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,30 +7,24 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "ambissionbox"
+BOT_NAME = "bantia"
 
-SPIDER_MODULES = ["ambissionbox.spiders"]
-NEWSPIDER_MODULE = "ambissionbox.spiders"
+SPIDER_MODULES = ["bantia.spiders"]
+NEWSPIDER_MODULE = "bantia.spiders"
 
-
-# Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "ambissionbox (+http://www.yourdomain.com)"
-
-## settings.py
 
 SCRAPEOPS_API_KEY = '5f39ebef-6600-4a86-b322-8b0fe4dc70f4'
+
 SCRAPEOPS_PROXY_ENABLED = True
 
-DOWNLOADER_MIDDLEWARES = {
-    'scrapeops_scrapy_proxy_sdk.scrapeops_scrapy_proxy_sdk.ScrapeOpsScrapyProxySdk': 725,
-}
-
+# Crawl responsibly by identifying yourself (and your website) on the user-agent
+#USER_AGENT = "bantia (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = False
+ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-#CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS = 1
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
@@ -55,14 +49,18 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "ambissionbox.middlewares.AmbissionboxSpiderMiddleware": 543,
+#    "bantia.middlewares.BantiaSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "ambissionbox.middlewares.AmbissionboxDownloaderMiddleware": 543,
+#    "bantia.middlewares.BantiaDownloaderMiddleware": 543,
 #}
+
+DOWNLOADER_MIDDLEWARES = {
+    'scrapeops_scrapy_proxy_sdk.scrapeops_scrapy_proxy_sdk.ScrapeOpsScrapyProxySdk': 725,
+}
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
@@ -73,7 +71,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    "ambissionbox.pipelines.AmbissionboxPipeline": 300,
+#    "bantia.pipelines.BantiaPipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -88,11 +86,6 @@ ROBOTSTXT_OBEY = False
 #AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
 # Enable showing throttling stats for every response received:
 #AUTOTHROTTLE_DEBUG = False
-
-DOWNLOADER_MIDDLEWARES = {
-'scrapeops_scrapy.middleware.retry.RetryMiddleware': 550,
-'scrapy.downloadermiddlewares.retry.RetryMiddleware': None,
-}
 
 # Enable and configure HTTP caching (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings

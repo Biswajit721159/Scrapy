@@ -1,4 +1,4 @@
-# Scrapy settings for ambissionbox project
+# Scrapy settings for splash project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,27 +7,35 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "ambissionbox"
+BOT_NAME = "splash"
 
-SPIDER_MODULES = ["ambissionbox.spiders"]
-NEWSPIDER_MODULE = "ambissionbox.spiders"
+SPIDER_MODULES = ["splash.spiders"]
+NEWSPIDER_MODULE = "splash.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "ambissionbox (+http://www.yourdomain.com)"
-
-## settings.py
-
-SCRAPEOPS_API_KEY = '5f39ebef-6600-4a86-b322-8b0fe4dc70f4'
-SCRAPEOPS_PROXY_ENABLED = True
-
-DOWNLOADER_MIDDLEWARES = {
-    'scrapeops_scrapy_proxy_sdk.scrapeops_scrapy_proxy_sdk.ScrapeOpsScrapyProxySdk': 725,
-}
-
+#USER_AGENT = "splash (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = False
+ROBOTSTXT_OBEY = True
+
+
+
+
+SPLASH_URL = 'http://localhost:8050'
+
+DOWNLOADER_MIDDLEWARES = {
+    'scrapy_splash.SplashCookiesMiddleware': 723,
+    'scrapy_splash.SplashMiddleware': 725,
+    'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
+}
+
+# Enable Splash Deduplicate Args Filter
+SPIDER_MIDDLEWARES = {
+    'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
+}
+
+DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -55,13 +63,13 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "ambissionbox.middlewares.AmbissionboxSpiderMiddleware": 543,
+#    "splash.middlewares.SplashSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "ambissionbox.middlewares.AmbissionboxDownloaderMiddleware": 543,
+#    "splash.middlewares.SplashDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -73,7 +81,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    "ambissionbox.pipelines.AmbissionboxPipeline": 300,
+#    "splash.pipelines.SplashPipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -88,11 +96,6 @@ ROBOTSTXT_OBEY = False
 #AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
 # Enable showing throttling stats for every response received:
 #AUTOTHROTTLE_DEBUG = False
-
-DOWNLOADER_MIDDLEWARES = {
-'scrapeops_scrapy.middleware.retry.RetryMiddleware': 550,
-'scrapy.downloadermiddlewares.retry.RetryMiddleware': None,
-}
 
 # Enable and configure HTTP caching (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
